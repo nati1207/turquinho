@@ -75,6 +75,7 @@ foreach ($lista as $inscricao) {
     }
 }
 
+
 $mail->setFrom('natalia.cristiani.russo.7@gmail.com', 'Teste');
 $mail->addAddress($email, 'Inscrito na Feira como Teste');
 $mail->isHTML(true);
