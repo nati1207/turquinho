@@ -24,7 +24,7 @@ body {
 
 .title {
   text-align: center;
-  font-size: 50px;
+  font-size: 8vh;
   color: #834826;
   font-family: "Cinzel Decorative", serif;
   font-weight: 500;
@@ -90,7 +90,7 @@ input::placeholder{
   cursor: pointer;
   width: 100%;
   margin-top: 20px;
-  font-size: 1.5em;
+  font-size: 3vh;
 }
 
 .btn:hover {
@@ -253,6 +253,8 @@ input[type="radio"] {
 
 .container-erro-cpf p {
   font-size: 2vh;
+  margin: 0;
+  margin-top: 1em;
 }
 
 .container-erro-cpf h3 {
@@ -281,11 +283,11 @@ input[type="radio"] {
   font-size: 3vh;
   display: inline-block;
   margin-top: 20px;
-  padding: 10px 20px;
+  padding: 1vh 2vh;
   background-color: #c64c1f;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 1vh;
 }
 
 @media screen and (max-width: 999px) {
@@ -296,12 +298,9 @@ input[type="radio"] {
     border: solid 10px #c64c1f;
   }
   .title{
-    font-size: 2.6em;
+    font-size: 6vh;
   }
 
-  .btn{
-    font-size: 2rem;
-  }
 
   .description {
     font-size: 32px;
@@ -310,13 +309,4 @@ input[type="radio"] {
   .row, .container input, .container .form-select, .description, .container label {
     font-size: 1rem;
   }
- 
-
-
-}
-
-@media screen and (max-width: 850px) {
-
-
-
 }

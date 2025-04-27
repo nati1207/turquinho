@@ -9,8 +9,10 @@
     <link rel="shortcut icon" type="imagex/png" href="img/icon.ico">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.js"
+        integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
 </head>
 
 <body>
@@ -18,7 +20,10 @@
         <p class="title">RANCHINHO DO TURQUINHO</p>
         <p class="subTitle">Inscrição para a Feira Semanal</p>
         <p class="description">Olá! Para participar da nossa feira, <u>por favor preencha os campos abaixo com
-                atenção.</u></p>
+                atenção.</u>
+            <br>
+            Não é possível utilizar um CPF anteriormente cadastrado.
+        </p>
 
         <form action="captura-info.php" method="POST" id="formulario">
             <!-- Dados Pessoais -->
@@ -46,11 +51,13 @@
                     <div class="col-md-4 col-sm-12">
 
                         <label for="rg">Digite seu RG:</label>
-                        <input class="form-control" type="text" id="rg" name="rg" placeholder="xx.xxx.xxx-x" minlength="12" required>
+                        <input class="form-control" type="text" id="rg" name="rg" placeholder="xx.xxx.xxx-x"
+                            minlength="12" required>
                     </div>
                     <div class="col-md-4 col-sm-12">
                         <label for="cpf">Digite seu CPF:</label>
-                        <input class="form-control" type="text" id="cpf" name="cpf" placeholder="xxx.xxx.xxx-xx" minlength="14" required>
+                        <input class="form-control" type="text" id="cpf" name="cpf" placeholder="xxx.xxx.xxx-xx"
+                            minlength="14" required>
                     </div>
                 </div>
             </div>
@@ -63,20 +70,20 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <label for="rua">Rua:</label>
-                        <input class="form-control" placeholder="Rua: ... / Avenida: ..." type="text" id="rua"
-                            name="rua" required>
+                        <label for="logradouro">Logradouro:</label>
+                        <input class="form-control" placeholder="Rua: ... / Avenida: ..." type="text" id="logradouro"
+                            name="logradouro" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6 col-sm-12">
-                        <label for="bairro">Bairro:</label>
-                        <input class="form-control" placeholder="..." type="text" id="bairro" name="bairro" required>
-                    </div>
-                    <div class="col-md-6 col-sm-12">
                         <label for="numero">Número:</label>
                         <input class="form-control" placeholder="Numero" type="number" id="numero" name="numero"
                             required>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <label for="bairro">Bairro:</label>
+                        <input class="form-control" placeholder="..." type="text" id="bairro" name="bairro" required>
                     </div>
                 </div>
                 <div class="row">

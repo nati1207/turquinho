@@ -61,7 +61,7 @@ if (!$form) {
             <div class="sub-confirm">Endereço</div>
 
             <div class="col-md-6 col-sm-12 info">
-                <label> <b> Rua: </b> <?= $form['rua'] ?></label>
+                <label> <b> Logradouro: </b> <?= $form['logradouro'] ?></label>
 
             </div>
 

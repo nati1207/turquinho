@@ -32,7 +32,7 @@ $cpfBusca = $_GET['cpf'] ?? 'CPF não informado';
         <h1 class="cpf-errado"><?= htmlspecialchars($cpfBusca) ?></h1>
         <h3>CPF já cadastrado</h3>
         <p>Este CPF já foi registrado anteriormente.</p>
-        <a href="index.html">Voltar para o formulário</a>
+        <a onclick="history.go(-2)">Voltar para o formulário</a>
     </div>
 </body>
 

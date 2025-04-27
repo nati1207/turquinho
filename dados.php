@@ -33,7 +33,7 @@ $campos = [
     'rg',
     'cpf',
     'cep',
-    'rua',
+    'logradouro',
     'bairro',
     'cidade',
     'numero',
@@ -92,7 +92,7 @@ $mail->Body =
         <li><strong>RG:</strong> $rg</li>
         <li><strong>CPF:</strong> $cpf</li>
         <li><strong>CEP:</strong> $cep</li>
-        <li><strong>Rua:</strong> $rua</li>
+        <li><strong>Logradouro:</strong> $logradouro</li>
         <li><strong>Bairro:</strong> $bairro</li>
         <li><strong>Cidade:</strong> $cidade</li>
         <li><strong>Número:</strong> $numero</li>
