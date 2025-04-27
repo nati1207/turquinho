@@ -17,8 +17,8 @@ $mail = new PHPMailer(true);
 $mail->isSMTP();
 $mail->Host       = 'smtp.gmail.com';
 $mail->SMTPAuth   = true;
-$mail->Username   = 'organizacao.feira.turquinho@gmail.com'; // seu e-mail
-$mail->Password   = 'mdrp hgzp vnrz mrvf'; // senha do app, não a senha normal do Gmail
+$mail->Username   = 'natalia.cristiani.russo.7@gmail.com'; // seu e-mail
+$mail->Password   = 'mnub zyxj nwqc lrqe'; // senha do app, não a senha normal do Gmail
 $mail->SMTPSecure = 'tls';
 $mail->Port       = 587;
 
@@ -75,14 +75,13 @@ foreach ($lista as $inscricao) {
     }
 }
 
-$mail->setFrom('organizacao.feira.turquinho@gmail.com', 'Feira do Turquinho');
-$mail->addAddress(' xamazingarts@gmail.com', 'Organizador(a) da Feira do Turquinho');
-$mail->addBCC($email, 'Inscrito na Feira');
+$mail->setFrom('natalia.cristiani.russo.7@gmail.com', 'Teste');
+$mail->addAddress($email, 'Inscrito na Feira como Teste');
 $mail->isHTML(true);
 $mail->CharSet = 'UTF-8';
 
 // Conteúdo do e-mail
-$mail->Subject = "Nova Inscrição na Feria do Turquinho - $nome";
+$mail->Subject = "Nova Inscrição teste na Feria do Turquinho - $nome";
 $mail->Body =
     "<p style='margin: 0; font-size: 22px;'>$nome se inscreveu na feira do turquinho, com os seguintes dados:</p><br>
     <ul style='margin: 0; font-size: 16px;'>
