@@ -1,0 +1,42 @@
+[
+    {
+        "email": "natalia.cristiani.russo.7@gmail.com",
+        "nome": "NATALIA CRISTIANI RUSSO SANTOS",
+        "telefone": "(15)99681-2819",
+        "rg": "22.222.222-2",
+        "cpf": "111.111.111-12",
+        "rua": "Rua Luiz Canalle",
+        "bairro": "Centro",
+        "cidade": "Salto de Pirapora",
+        "numero": "119",
+        "estado": "SP",
+        "cep": "18160-003",
+        "artesanato": "Bordado",
+        "temAjudante": "nao",
+        "qtdAjudantes": "1",
+        "ajudante1": "Sem informação\/Não possui",
+        "ajudante2": "Sem informação\/Não possui",
+        "aceite": "Sem informação\/Não possui",
+        "data_envio": "2025-04-26 02:17:41"
+    },
+    {
+        "email": "natalia.cristiani.russo.7@gmail.com",
+        "nome": "NATALIA CRISTIANI RUSSO SANTOS",
+        "telefone": "(15)99681-2819",
+        "rg": "22.222.222-2",
+        "cpf": "111.111.111-13",
+        "rua": "Rua Luiz Canalle",
+        "bairro": "Centro",
+        "cidade": "Salto de Pirapora",
+        "numero": "119",
+        "estado": "SP",
+        "cep": "18160-003",
+        "artesanato": "Bordado",
+        "temAjudante": "nao",
+        "qtdAjudantes": "1",
+        "ajudante1": "Sem informação\/Não possui",
+        "ajudante2": "Sem informação\/Não possui",
+        "aceite": "Sem informação\/Não possui",
+        "data_envio": "2025-04-26 02:23:31"
+    }
+]

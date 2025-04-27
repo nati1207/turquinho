@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inscrição Feira - Ranchinho do Turquinho</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="imagex/png" href="img/icon.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
+</head>
+
+<body>
+    <div class="section">
+        <p class="title">RANCHINHO DO TURQUINHO</p>
+        <p class="subTitle">Inscrição para a Feira Semanal</p>
+        <p class="description">Olá! Para participar da nossa feira, <u>por favor preencha os campos abaixo com
+                atenção.</u></p>
+
+        <form action="captura-info.php" method="POST" id="formulario">
+            <!-- Dados Pessoais -->
+            <div class="container">
+                <h3>Dados Pessoais</h3>
+                <div class="row">
+                    <div class="col-md-12">
+                        <label for="nome">Digite seu nome completo:</label>
+                        <input class="form-control" type="text" id="nome" name="nome" placeholder="Nome" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <label for="email">E-mail:</label>
+                        <input class="form-control" type="email" id="email" name="email"
+                            placeholder="Ex: seu.email@gmail.com" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <label for="tel">Digite seu Telefone:</label>
+                        <input class="form-control" type="text" id="tel" name="telefone" placeholder="(xx) xxxxx-xxxx"
+                            required>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+
+                        <label for="rg">Digite seu RG:</label>
+                        <input class="form-control" type="text" id="rg" name="rg" placeholder="xx.xxx.xxx-x" minlength="12" required>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <label for="cpf">Digite seu CPF:</label>
+                        <input class="form-control" type="text" id="cpf" name="cpf" placeholder="xxx.xxx.xxx-xx" minlength="14" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <h3> Endereço </h3>
+                <div class="col-md-12">
+                    <Label for="cep">CEP:</Label>
+                    <input class="form-control" placeholder="xxxxx-xxx" type="text" id="cep" name="cep" required>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <label for="rua">Rua:</label>
+                        <input class="form-control" placeholder="Rua: ... / Avenida: ..." type="text" id="rua"
+                            name="rua" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <label for="bairro">Bairro:</label>
+                        <input class="form-control" placeholder="..." type="text" id="bairro" name="bairro" required>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <label for="numero">Número:</label>
+                        <input class="form-control" placeholder="Numero" type="number" id="numero" name="numero"
+                            required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <label for="cidade">Cidade:</label>
+                        <input class="form-control" placeholder="Cidade" type="text" id="cidade" name="cidade" required>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <label for="estado">Estado:</label>
+                        <select class="form-select" id="estado" name="estado" required>
+                            <option value="" disabled selected>Selecione o estado</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dados do Artesanato -->
+            <div class="container">
+                <h3>Dados do Artesanato</h3>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <label for="artesanato">Qual tipo de Artesanato que você produz?</label>
+                        <input class="form-control" type="text" id="artesanato" name="artesanato"
+                            placeholder="Ex: Bordado..." required>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12">
+                        <label>Você tem ajudante?</label>
+                        <input type="radio" id="ajudanteSim" name="temAjudante" value="sim">
+                        <label for="ajudanteSim" style="display: inline;">Sim</label>
+                        <input type="radio" id="ajudanteNao" name="temAjudante" value="nao" checked>
+                        <label for="ajudanteNao" style="display: inline;">Não</label>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div id="quantosAjudantes" style="display:none;">
+                        <label>Quantos Ajudantes? (1 ou 2 no máximo)</label>
+                        <input type="radio" id="1a" name="qtdAjudantes" value="1">
+                        <label for="1a" style="display: inline;">1 Ajudante</label>
+                        <input type="radio" id="2a" name="qtdAjudantes" value="2">
+                        <label for="2a" style="display: inline;">2 Ajudantes</label>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12" id="nome1" style="display:none;">
+                            <label for="ajudante1">Nome do Ajudante:</label>
+                            <input type="text" id="ajudante1" name="ajudante1" placeholder="Informe o 1° ajudante">
+                        </div>
+                        <div class="col-md-6 col-sm-12" id="nome2" style="display:none;">
+                            <label for="ajudante2">Nome do Ajudante:</label>
+                            <input type="text" id="ajudante2" name="ajudante2" placeholder="Informe 2° ajudante">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aceitação das Taxas e Condições -->
+            <div class="container">
+                <h3>Confirmação</h3>
+                <p class="description">
+                    Confirmo que estou ciente da <u>taxa mensal de R$ 25,00</u> para manutenção do espaço e da
+                    <u>consumação
+                        mínima diária de R$ 24,00</u> (para mim e para cada ajudante, se houver).
+                </p>
+                <input type="checkbox" id="aceite" name="aceite" required>
+                <label for="aceite" style="display: inline;"><i>Li e aceito as condições de participação.</i></label>
+            </div>
+
+            <!-- Botão de Envio -->
+            <button type="submit" class="btn">Enviar Inscrição</button>
+        </form>
+
+        <script>
+            // Exibe o campo de quantidade de ajudantes apenas se "sim" for selecionado
+            document.getElementsByName("temAjudante").forEach(function (elem) {
+                elem.addEventListener("change", function () {
+                    let temAjudante = this.value === "sim";
+                    let opc2 = document.getElementsByName("qtdAjudantes")[1].checked;
+                    if (this.value === "sim") {
+                        document.getElementById("nome2").style.display = (opc2) ? "block" : "none";
+                        document.getElementById("quantosAjudantes").style.display = "block";
+                        document.getElementById("nome1").style.display = "block";
+                    } else {
+                        document.getElementById("quantosAjudantes").style.display = "none";
+                        document.getElementById("nome1").style.display = "none";
+                        document.getElementById("nome2").style.display = "none";
+                        document.getElementById("nome1").value = "";
+                        document.getElementById("nome2").value = "";
+                    }
+                });
+            });
+
+            // Exibe os campos de nome dos ajudantes conforme a quantidade selecionada
+            document.getElementsByName("qtdAjudantes").forEach(function (elem) {
+                elem.addEventListener("change", function () {
+                    let qtd = parseInt(this.value);
+                    document.getElementById("nome2").style.display = (qtd == 2) ? "block" : "none";
+                });
+            });
+        </script>
+
+    </div>
+</body>
+
+<script type="text/javascript" src="js/cep.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</html>

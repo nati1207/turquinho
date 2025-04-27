@@ -1,0 +1,322 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif; 
+  color: #333;
+  margin: 0;
+  height: 100%;
+  background-image: url(../img/fundo.png);
+  background-size: cover;
+}
+
+.section {
+  background-color: #fff;
+  max-width: 700px;
+  height: auto;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.title {
+  text-align: center;
+  font-size: 50px;
+  color: #834826;
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.subTitle {
+  text-align: center;
+  font-size: 32px;
+  color: #d33f19; 
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.description {
+  text-align: center;
+  font-size: 20px;
+  color: #333;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  padding: 10px;
+}
+
+.container, .container-erro-cpf {
+  margin: 20px auto 0 auto;
+  padding: 10px;
+  background-color: #ffead0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h3{
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 2.7rem;
+  color: #d33f19; 
+  font-weight: 600;
+  padding: 10px;
+  margin: 5px 0 5px;
+}
+
+label {
+  display: block;
+  color: #361d0f;
+  margin: 15px 0 5px;
+}
+input::placeholder{
+  color: rgba(136, 136, 136, 0.775) !important; /* Cor desejada */
+}
+
+.btn {
+  background: #c64c1f;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 1.5em;
+}
+
+.btn:hover {
+  background: #ff652c;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.container-obg {
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 700px;
+  height: 70vh;
+  margin: auto;  
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.redes p{
+  font-size: 18px;
+  margin: 5px;
+}
+
+.icon{
+  width: 30px;
+  height: 30px;
+  margin: 0 10px 0 10px;
+}
+
+.icons{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+/*CONFIRMAÇÃO*/
+
+.info{
+  background-color: #ffead0;
+  border-radius: 8px;
+  border: #333 solid 3px;
+  margin: 5px 0 5px 0;
+  padding: 3px 8px 3px 8px;
+}
+
+.info label{
+  margin: 0;
+}
+
+.sub-confirm{
+  text-align: center;
+  font-size: 32px;
+  color: #ffffff; 
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+/*BOTÕES*/
+
+.botoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.botao-voltar,
+.botao-confirmar {
+  padding: 14px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 180px;
+}
+
+/* Estilo do botão "Voltar" */
+.botoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.botao-voltar,
+.botao-confirmar {
+  padding: 14px 24px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 180px;
+}
+
+/* Botão "Voltar e Corrigir" */
+.botao-voltar {
+  background-color: #f44336 ; /* vermelho suave */
+  color: #fff;
+  border: #fff solid 2px;
+}
+
+.botao-voltar:hover {
+  background-color: #d32f2f;
+  transform: translateY(-2px);
+}
+
+/* Botão "Confirmar e Enviar" */
+.botao-confirmar {
+  background-color: fff;
+  color: #c64c1f;
+  border: #c64c1f solid 2px;
+}
+
+.botao-confirmar:hover {
+  background-color: #f27649;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+  .botao-voltar,
+  .botao-confirmar {
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  transform: scale(1.5); /* aumenta 1.5x o tamanho */
+  margin: 5px;           /* opcional, só para dar espaço */
+}
+
+
+
+.confirm-section{
+  width: 85%; 
+  margin: 20px auto; 
+  text-align: center;
+}
+.cpf-errado{
+  font-family: "Montserrat", sans-serif;
+  font-size: 5em;
+  color: #834826;
+}
+
+.container-erro-cpf p {
+  font-size: 2vh;
+}
+
+.container-erro-cpf h3 {
+  font-size: 4vh;
+}
+
+.confirm-section{
+  width: 85%; 
+  margin: 20px auto; 
+  text-align: center;
+}
+.cpf-errado{
+  font-family: "Montserrat", sans-serif;
+  font-size: 6vh;
+  color: #834826;
+}
+.container-erro-cpf{
+  background-color: #ffead0;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.container-erro-cpf a {
+  font-size: 3vh;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #c64c1f;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 999px) {
+  .section {
+    max-width: 1000px;
+    margin: 0;
+    box-sizing: border-box;
+    border: solid 10px #c64c1f;
+  }
+  .title{
+    font-size: 2.6em;
+  }
+
+  .btn{
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 32px;
+  }
+
+  .row, .container input, .container .form-select, .description, .container label {
+    font-size: 1rem;
+  }
+ 
+
+
+}
+
+@media screen and (max-width: 850px) {
+
+
+
+}
