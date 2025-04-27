@@ -12,7 +12,7 @@ function buscaCep(){
         req.onload = function (){
             if (req.status === 200){
                 let endereco = JSON.parse(req.response);
-                document.getElementById("rua").value = endereco.street;
+                document.getElementById("logradouro").value = endereco.street;
                 document.getElementById("bairro").value = endereco.neighborhood;
                 document.getElementById("cidade").value = endereco.city;
                 document.getElementById("estado").value = endereco.state;
@@ -38,7 +38,7 @@ window.onload = function(){
 }
 
 function limparCampos() {
-    document.getElementById("rua").value = "";
+    document.getElementById("logradouro").value = "";
     document.getElementById("bairro").value = "";
     document.getElementById("cidade").value = "";
 }
